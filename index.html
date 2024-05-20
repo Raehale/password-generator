@@ -1,0 +1,48 @@
+<!DOCTYPE>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Kalam:wght@300;400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container" id="info_container">
+            <div class="light-mode-checkbox">
+                <label for="light_mode">Light Mode</label>
+                <input type="checkbox" id="light_mode"></input>
+            </div>
+            
+            <h1>Generate a 
+                <div class="green-words">random password</div>
+            </h1>
+            
+            <p>Never use an insecure password again.</p>
+            
+            <label for="password_length">Set Password Length</label>
+            <input id="password_length"></input><br />
+            
+            <label for="symbols_answer">Symbols</label>
+            <input type="checkbox" id="symbols_answer" checked="checked"></input><br />
+            
+            <label for="numbers_answer">Numbers</label>
+            <input type="checkbox" id="numbers_answer" checked="checked"></input><br />
+            
+            <button onclick="generatePasswords()">Generate Passwords</button>
+            
+            <hr>
+            
+            <div class="password-fields">
+                <div class="field" id="password_field_one">
+                    Password
+                </div>
+                <div class="field" id="password_field_two">
+                    Password
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
