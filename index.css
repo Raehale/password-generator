@@ -125,14 +125,14 @@ input {
     color: #1E041F;
 }
 
-button {
+.light-mode button {
     background-color: #3A153B;
     color: #F4D3FB;
     
     border: 2px solid #3A153B;
 }
 
-button:hover {
+.light-mode button:hover {
     background-color: #F4D3FB;
     color: #3A153B;
 }
