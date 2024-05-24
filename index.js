@@ -52,12 +52,12 @@ lightModeCheckbox.addEventListener('change', function() {
 /***COPY TEXT***/
 function copyOnClickOne() {
     const passwordOneText = document.getElementById('password_field_one').textContent;
-    navigator.clipboard.writeText(text);
-    alert("Copied the text: " + text);
+    navigator.clipboard.writeText(passwordOneText);
+    alert("Copied the text: " + passwordOneText);
 }
 
 function copyOnClickTwo() {
     const passwordTwoText = document.getElementById('password_field_two').textContent;
-    navigator.clipboard.writeText(text);
-    alert("Copied the text: " + text);
+    navigator.clipboard.writeText(passwordTwoText);
+    alert("Copied the text: " + passwordTwoText);
 }
