@@ -12,7 +12,7 @@ function generatePasswords() {
     const numbers = document.getElementById("numbers_answer");
 
     
-    if (passLength) {
+    if (Number(passLength)) {
         passwordLength = passLength
     }
     
@@ -52,8 +52,19 @@ lightModeCheckbox.addEventListener('change', function() {
 /***COPY TEXT -- WIP ***/
 
 function copyOnClick() {
-    passwordOne = document.getElementById('password_field_one').textContent;
+    let passwordOneText = document.getElementById('password_field_one');
     // passwordOne.select();
     // document.execCommand("copy");
-    setClipboard(passwordOne);
+    // setClipboard(passwordOne);
+      // Get the text field
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(passwordOneText.textContent);
+
+  // Alert the copied text
+  alert("Copied the text: " + passwordOneText.textContent);
 }
