@@ -58,13 +58,15 @@ function copyOnClick() {
     // setClipboard(passwordOne);
       // Get the text field
 
+    navigator.clipboard.writeText(passwordOneText);
+
   // Select the text field
-  passwordOneText.select();
-  passwordOneText.setSelectionRange(0, 99999); // For mobile devices
+  // passwordOneText.select();
+  // passwordOneText.setSelectionRange(0, 99999); // For mobile devices
 
    // Copy the text inside the text field
-  navigator.clipboard.writeText(passwordOneText.textContent);
+  // navigator.clipboard.writeText(passwordOneText.textContent);
 
   // Alert the copied text
-  alert("Copied the text: " + passwordOneText.textContent);
+  // alert("Copied the text: " + passwordOneText.textContent);
 }
