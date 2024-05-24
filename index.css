@@ -10,12 +10,19 @@ body {
 .container {
     background-color: #1F2937;
     
-    width: 500px;
+    max-width: 500px;
     height: 500px;
     margin: 1em auto;
-    border: 5px solid white;
+    border: 5px solid #ffffff;
     border-radius: 12px;
-    padding: 1em 2em;
+    padding: 1em 3em;
+}
+
+h1 {
+    margin-top: 1em;
+    
+    font-weight: 900;
+    font-size: 40px;
 }
 
 h1 .green-words {
@@ -37,9 +44,16 @@ button {
     border-radius: 6px;
 }
 
+hr {
+    border: 1px solid #2F3E53;
+}
+
+/***PASSWORDS***/
+
 .password-fields {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .field {
@@ -54,27 +68,52 @@ button {
     padding-top: 1em;
 }
 
-/***LIGHT MODE***/
-.container.light-mode {
-    background-color: #ECFDF5;
-    
-    color: #2B283A;
+/**COPY ICON**/
+
+.copy-icon img {
+    width: 20px;
+    float: right;
+    padding: 0 5px;
 }
 
-.light-mode p,
-.light-mode input {
-    color: #6B7280;
+.copy-icon img:hover {
+    opacity: .1;
+    cursor: pointer;
 }
 
 /***INPUT***/
 input {
     border-radius: 4px;
     border: 0;
+    padding: 5px 10px;
+    
     background-color: #273549;
+    color: #10B981;
 }
 
 /***CHECKBOXES***/
 .light-mode-checkbox {
     display: flex;
     justify-content: flex-end;
+}
+
+/***LIGHT MODE***/
+.container.light-mode {
+    border: 5px solid #D5D4D8;
+    
+    background-color: #ECFDF5;
+    color: #2B283A;
+}
+
+.light-mode p,
+.light-mode label {
+    color: #6B7280;
+}
+
+.light-mode input {
+    background-color: #D5D4D8;
+}
+
+.light-mode hr {
+    border: 1px solid #D5D4D8;
 }
