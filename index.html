@@ -5,8 +5,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Kalam:wght@300;400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
         <link rel="stylesheet" href="index.css">
+        <html lang="en">
+        <title>Generate a Random Password</title>
     </head>
     <body>
         <div class="container" id="info_container">
@@ -36,11 +38,21 @@
             
             <div class="password-fields">
                 <div class="field" id="password_field_one">
-                    Password
+                    
                 </div>
+                
+                <div class="copy-icon" onclick="copyOnClick()">
+                    <img src="/copy-regular.png" />
+                </div>
+
                 <div class="field" id="password_field_two">
-                    Password
+                    
                 </div>
+                                
+                <div class="copy-icon">
+                    <img src="/copy-regular.png" />
+                </div>
+
             </div>
         </div>
         <script src="index.js"></script>
