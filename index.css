@@ -145,3 +145,7 @@ input {
     background-color: #7B4D7D;
     color: #1E041F;
 }
+
+.light-mode .copy-icon img {
+    filter: grayscale(100%) contrast(0%);
+}
