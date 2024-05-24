@@ -49,24 +49,15 @@ lightModeCheckbox.addEventListener('change', function() {
   }
 });
 
-/***COPY TEXT -- WIP ***/
+/***COPY TEXT***/
+function copyOnClickOne() {
+    const passwordOneText = document.getElementById('password_field_one').textContent;
+    navigator.clipboard.writeText(text);
+    alert("Copied the text: " + text);
+}
 
-function copyOnClick() {
-    let passwordOneText = document.getElementById('password_field_one').textContent;
-    // passwordOne.select();
-    // document.execCommand("copy");
-    // setClipboard(passwordOne);
-      // Get the text field
-
-    navigator.clipboard.writeText(passwordOneText);
-
-  // Select the text field
-  // passwordOneText.select();
-  // passwordOneText.setSelectionRange(0, 99999); // For mobile devices
-
-   // Copy the text inside the text field
-  // navigator.clipboard.writeText(passwordOneText.textContent);
-
-  // Alert the copied text
-  // alert("Copied the text: " + passwordOneText.textContent);
+function copyOnClickTwo() {
+    const passwordTwoText = document.getElementById('password_field_two').textContent;
+    navigator.clipboard.writeText(text);
+    alert("Copied the text: " + text);
 }
