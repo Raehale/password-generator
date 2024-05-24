@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    background-color: #1F2937;
+    background-color: #3A153B;
     
     max-width: 500px;
     height: 500px;
@@ -25,8 +25,8 @@ h1 {
     font-size: 40px;
 }
 
-h1 .green-words {
-    color: #10B981
+h1 .purple-words {
+    color: #F4D3FB
 }
 
 p,
@@ -35,17 +35,24 @@ label {
 }
 
 button {
-    background-color: #10B981;
+    background-color: #F4D3FB;
     
-    border: 0;
+    border: 2px solid #F4D3FB;
 
     margin: 40px 0 20px 0;
     padding: 9px 17px 9px 15px;
     border-radius: 6px;
 }
 
+button:hover {
+    background-color: #3A153B;
+    color: #F4D3FB;
+    
+    cursor: pointer;
+}
+
 hr {
-    border: 1px solid #2F3E53;
+    border: 1px solid #F4D3FB;
 }
 
 /***PASSWORDS***/
@@ -57,8 +64,8 @@ hr {
 }
 
 .field {
-    background-color: #273549;
-    color: #55F991;
+    background-color: #1E041F;
+    color: #F4D3FB;
     text-align: center;
     
     width: 211px;
@@ -69,7 +76,6 @@ hr {
 }
 
 /**COPY ICON**/
-
 .copy-icon img {
     width: 20px;
     float: right;
@@ -87,8 +93,8 @@ input {
     border: 0;
     padding: 5px 10px;
     
-    background-color: #273549;
-    color: #10B981;
+    background-color: #1E041F;
+    color: #F4D3FB;
 }
 
 /***CHECKBOXES***/
@@ -99,21 +105,43 @@ input {
 
 /***LIGHT MODE***/
 .container.light-mode {
-    border: 5px solid #D5D4D8;
+    border: 5px solid #7B4D7D;
     
-    background-color: #ECFDF5;
+    background-color: #F4D3FB;
     color: #2B283A;
+}
+
+.light-mode h1 .purple-words {
+    color: #7B4D7D;
 }
 
 .light-mode p,
 .light-mode label {
-    color: #6B7280;
+    color: #241F24;
 }
 
 .light-mode input {
-    background-color: #D5D4D8;
+    background-color: #7B4D7D;
+    color: #1E041F;
+}
+
+button {
+    background-color: #3A153B;
+    color: #F4D3FB;
+    
+    border: 2px solid #3A153B;
+}
+
+button:hover {
+    background-color: #F4D3FB;
+    color: #3A153B;
 }
 
 .light-mode hr {
-    border: 1px solid #D5D4D8;
+    border: 1px solid #3A153B;
+}
+
+.light-mode .field {
+    background-color: #7B4D7D;
+    color: #1E041F;
 }
