@@ -12,7 +12,7 @@ function generatePasswords() {
     const numbers = document.getElementById("numbers_answer");
 
     
-    if (Number(passLength)) {
+    if (Number(passLength) <= 20) {
         passwordLength = passLength
     }
     
