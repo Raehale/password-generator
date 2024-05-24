@@ -52,7 +52,7 @@ lightModeCheckbox.addEventListener('change', function() {
 /***COPY TEXT -- WIP ***/
 
 function copyOnClick() {
-    let passwordOneText = document.getElementById('password_field_one');
+    let passwordOneText = document.getElementById('password_field_one').textContent;
     // passwordOne.select();
     // document.execCommand("copy");
     // setClipboard(passwordOne);
